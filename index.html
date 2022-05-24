@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson1 - VueJS</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.15.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container mx-auto bg-stone-200 px-4 py-8">
+      <h1 class="font-bold text-2xl">Hello, Vue</h1>
+      <div id="app">
+        <!-- This is Where our vue app is mounted -->
+        <fieldset class="border border-solid border-slate-600 p-3 w-fit">
+          <legend class="text-sm">Book</legend>
+          <div>
+            <p>Title: {{title}}</p>
+            <p>Author: {{author}}</p>
+          </div>
+        </fieldset>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
